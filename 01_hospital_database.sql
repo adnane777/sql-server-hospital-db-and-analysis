@@ -322,7 +322,7 @@ SELECT * FROM Appointment
 
 --5.To Create view, appointment date and time, showing all previous and current appointments for all doctors,
 --and including details of the department (the doctor is associated with), 
---doctor’s specialty and any associate review/feedback given for a doctor.
+--doctorÂ’s specialty and any associate review/feedback given for a doctor.
 
 
 CREATE VIEW CompeleteAppointmentDetails AS
@@ -364,7 +364,7 @@ FROM PendingAppointment pa JOIN Doctor d ON pa.DoctorID=d.DoctorID
 JOIN Department dp ON pa.DepartmentID=dp.DepartmentID
 WHERE pa.AppointmentStatus='Available'
 
---7.Write a select query which allows the hospital to identify the number of completed appointments with the specialty of doctors as ‘Gastroenterologists’.
+--7.Write a select query which allows the hospital to identify the number of completed appointments with the specialty of doctors as Â‘GastroenterologistsÂ’.
 
 SELECT COUNT(AppointmentStatus) AS NoofCompeletedAppointments
 FROM CompeletedAppointments ca 
